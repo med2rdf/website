@@ -1,8 +1,16 @@
 ## MED2RDF
 
-The med2rdf project develops and provides RDF data of biomedical databases. Our [GitHub repository](https://github.com/med2rdf) provides converters for various databases as a docker container.
+The med2rdf project develops converters and provides RDF data of biomedical databases.
 
-### Biomedical databases to be supported
+### Project resources
+
+* This [Web site](http://www.med2rdf.org/) and the [GitHub Pages](https://github.com/med2rdf/website) source contents
+  * See [instructions](USAGE) for the online editor, Jekyll and Markdown
+* [GitHub repository](https://github.com/med2rdf)
+* [Google groups](https://groups.google.com/forum/#!forum/med2rdf)
+* [Google drive](https://drive.google.com/open?id=0B-rUd_Q0C7HvdmJaaVBoT1QtSTA)
+
+### Biomedical databases
 
 Currently we are working on the following databases:
 
@@ -17,47 +25,15 @@ Currently we are working on the following databases:
 * CiVic
 * HiNT
 * INstruct
+* HGNC
 
 etc.
 
------
+### RDF data models
 
-Original contents follows:
+* Ontologies for above biomedical databases
+  * Ontology commonly used among databases
+  * Ontology specific to each database
+* Human chromosome ontology
+* Standardization of variation representation
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/med2rdf/website/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/med2rdf/website/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
