@@ -2,6 +2,8 @@
 
 The med2rdf project develops converters and provides RDF data of biomedical databases.
 
+![](med2rdf_logo.png)
+
 ### Project resources
 
 * This [Web site](http://www.med2rdf.org/) and the [GitHub Pages](https://github.com/med2rdf/website) source contents
