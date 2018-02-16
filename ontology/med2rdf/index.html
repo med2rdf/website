@@ -115,23 +115,41 @@
 <tr>
 <td><a href="#Classes">
                                     Classes (
-                                    0
+                                    6
                                     )
                             </a></td>
-<td><select onChange="window.location.hash = document.getElementById('naviClass').value" id="naviClass"></select></td>
+<td><select onChange="window.location.hash = document.getElementById('naviClass').value" id="naviClass"><option value="Disease">
+				m2r:Disease</option>
+<option value="Evidence">
+				m2r:Evidence</option>
+<option value="Gene">
+				m2r:Gene</option>
+<option value="Variation">
+				m2r:Variation</option>
+<option value="">http://purl.obolibrary.org/obo/SO_0001060</option>
+<option value="">http://purl.obolibrary.org/obo/VariO_0001</option></select></td>
 </tr>
 <tr><td><a href="#Properties">
                                     Properties (
-                                    2
+                                    7
                                     )
                             </a></td></tr>
 <tr>
 <td><a style="objectPropertySearch" href="#ObjectProperties">
                                     Object properties (
-                                    0
+                                    5
                                     )
                             </a></td>
-<td><select onChange="window.location.hash = document.getElementById('navi3').value" id="navi3"></select></td>
+<td><select onChange="window.location.hash = document.getElementById('navi3').value" id="navi3"><option value="caused_by">
+				m2r:caused_by</option>
+<option value="disease">
+				m2r:disease</option>
+<option value="evidence">
+				m2r:evidence</option>
+<option value="gene">
+				m2r:gene</option>
+<option value="variation">
+				m2r:variation</option></select></td>
 </tr>
 <tr>
 <td><a style="datatypePropertySearch" href="#DatatypeProperties">
@@ -186,10 +204,24 @@
 						@en</td>
 </tr>
 <tr>
-<td><a href="http://www.w3.org/2002/07/owl#versionIRI">
-					owl:versionIRI</a></td>
-<td><a href="http://med2rdf.org/ontology/med2rdf#2018-01-31">
-				m2r:2018-01-31</a></td>
+<td><a href="http://www.w3.org/2002/07/owl#imports">
+					owl:imports</a></td>
+<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+				rdf:</a></td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2002/07/owl#imports">
+					owl:imports</a></td>
+<td><a href="http://www.w3.org/2004/02/skos/core">http://www.w3.org/2004/02/skos/core</a></td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2002/07/owl#versionInfo">
+					owl:versionInfo</a></td>
+<td>
+						"0.05"
+						<sup><a href=".">
+				xsd:decimal</a></sup>
+</td>
 </tr>
 </table></div>
 </div>
@@ -197,7 +229,102 @@
 <h2>
 						Classes
 					</h2>
-<div class="nice-content" id="Classes"></div>
+<div class="nice-content" id="Classes">
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#Disease"></a><tbody>
+<tr><th id="Disease">
+				m2r:Disease<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#Class">
+					owl:Class</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"Disease"
+						@en</td>
+</tr>
+</tbody>
+</table>
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#Evidence"></a><tbody>
+<tr><th id="Evidence">
+				m2r:Evidence<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#Class">
+					owl:Class</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"Evidence"
+						@en</td>
+</tr>
+</tbody>
+</table>
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#Gene"></a><tbody>
+<tr><th id="Gene">
+				m2r:Gene<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#Class">
+					owl:Class</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"Gene"
+						@en</td>
+</tr>
+</tbody>
+</table>
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#Variation"></a><tbody>
+<tr><th id="Variation">
+				m2r:Variation<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#Class">
+					owl:Class</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"Variation"
+						@en</td>
+</tr>
+</tbody>
+</table>
+<table class="subsection">
+<a name="http://purl.obolibrary.org/obo/SO_0001060"></a><tbody><tr><th id="">http://purl.obolibrary.org/obo/SO_0001060<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#Class">
+					owl:Class</a>
+								)
+							</span>
+</th></tr></tbody>
+</table>
+<table class="subsection">
+<a name="http://purl.obolibrary.org/obo/VariO_0001"></a><tbody><tr><th id="">http://purl.obolibrary.org/obo/VariO_0001<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#Class">
+					owl:Class</a>
+								)
+							</span>
+</th></tr></tbody>
+</table>
+</div>
 </div>
 <div class="nice" id="section_Properties" style="position: relative;">
 <h2>
@@ -205,6 +332,171 @@
 					</h2>
 <div class="nice-content" id="Properties">
 <h3 id="ObjectProperties">Object properties</h3>
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#caused_by"></a><tbody>
+<tr><th id="caused_by">
+				m2r:caused_by<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#ObjectProperty">
+					owl:ObjectProperty</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#domain">
+					rdfs:domain</a></td>
+<td><a href="http://med2rdf.org/ontology/med2rdf#Disease">
+				m2r:Disease</a></td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"caused_by"
+						@en</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#range">
+					rdfs:range</a></td>
+<td><a href="http://med2rdf.org/ontology/med2rdf#Variation">
+				m2r:Variation</a></td>
+</tr>
+</tbody>
+</table>
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#disease"></a><tbody>
+<tr><th id="disease">
+				m2r:disease<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#ObjectProperty">
+					owl:ObjectProperty</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#domain">
+					rdfs:domain</a></td>
+<td><a href="http://med2rdf.org/ontology/med2rdf#Variation">
+				m2r:Variation</a></td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"disease"
+						@en</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#range">
+					rdfs:range</a></td>
+<td><a href="http://med2rdf.org/ontology/med2rdf#Disease">
+				m2r:Disease</a></td>
+</tr>
+</tbody>
+</table>
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#evidence"></a><tbody>
+<tr><th id="evidence">
+				m2r:evidence<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#ObjectProperty">
+					owl:ObjectProperty</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#domain">
+					rdfs:domain</a></td>
+<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+				rdf:Statement</a></td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"evidence"
+						@en</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#range">
+					rdfs:range</a></td>
+<td><a href="http://med2rdf.org/ontology/med2rdf#Evidence">
+				m2r:Evidence</a></td>
+</tr>
+</tbody>
+</table>
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#gene"></a><tbody>
+<tr><th id="gene">
+				m2r:gene<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#ObjectProperty">
+					owl:ObjectProperty</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#domain">
+					rdfs:domain</a></td>
+<td>
+      <a href="http://www.w3.org/2002/07/owl#unionOf">owl:unionOf</a>
+							(
+							<br><span class="indent"><a href="http://med2rdf.org/ontology/med2rdf#Variation">
+				m2r:Variation</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/SO_0001060">http://purl.obolibrary.org/obo/SO_0001060</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/VariO_0001">http://purl.obolibrary.org/obo/VariO_0001</a></span><br>
+							)
+						</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"gene"
+						@en</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#range">
+					rdfs:range</a></td>
+<td><a href="http://med2rdf.org/ontology/med2rdf#Gene">
+				m2r:Gene</a></td>
+</tr>
+</tbody>
+</table>
+<table class="subsection">
+<a name="http://med2rdf.org/ontology/med2rdf#variation"></a><tbody>
+<tr><th id="variation">
+				m2r:variation<span class="cp-type">
+								(rdf:type
+								<a href="http://www.w3.org/2002/07/owl#ObjectProperty">
+					owl:ObjectProperty</a>
+								)
+							</span>
+</th></tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#domain">
+					rdfs:domain</a></td>
+<td><a href="http://med2rdf.org/ontology/med2rdf#Gene">
+				m2r:Gene</a></td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">
+					rdfs:label</a></td>
+<td>
+						"variation"
+						@en</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#range">
+					rdfs:range</a></td>
+<td>
+      <a href="http://www.w3.org/2002/07/owl#unionOf">owl:unionOf</a>
+							(
+							<br><span class="indent"><a href="http://med2rdf.org/ontology/med2rdf#Variation">
+				m2r:Variation</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/SO_0001060">http://purl.obolibrary.org/obo/SO_0001060</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/VariO_0001">http://purl.obolibrary.org/obo/VariO_0001</a></span><br>
+							)
+						</td>
+</tr>
+</tbody>
+</table>
 <h3 id="DatatypeProperties">Datatype properties</h3>
 <table class="subsection">
 <a name="http://med2rdf.org/ontology/med2rdf#alternative_allele"></a><tbody>
@@ -222,7 +514,8 @@
 <td>
       <a href="http://www.w3.org/2002/07/owl#unionOf">owl:unionOf</a>
 							(
-							<br><span class="indent"><a href="http://purl.obolibrary.org/obo/SO_0001060">http://purl.obolibrary.org/obo/SO_0001060</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/VariO_0001">http://purl.obolibrary.org/obo/VariO_0001</a></span><br>
+							<br><span class="indent"><a href="http://med2rdf.org/ontology/med2rdf#Variation">
+				m2r:Variation</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/SO_0001060">http://purl.obolibrary.org/obo/SO_0001060</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/VariO_0001">http://purl.obolibrary.org/obo/VariO_0001</a></span><br>
 							)
 						</td>
 </tr>
@@ -250,7 +543,8 @@
 <td>
       <a href="http://www.w3.org/2002/07/owl#unionOf">owl:unionOf</a>
 							(
-							<br><span class="indent"><a href="http://purl.obolibrary.org/obo/SO_0001060">http://purl.obolibrary.org/obo/SO_0001060</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/VariO_0001">http://purl.obolibrary.org/obo/VariO_0001</a></span><br>
+							<br><span class="indent"><a href="http://med2rdf.org/ontology/med2rdf#Variation">
+				m2r:Variation</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/SO_0001060">http://purl.obolibrary.org/obo/SO_0001060</a></span><br><em>or</em><br><span class="indent"><a href="http://purl.obolibrary.org/obo/VariO_0001">http://purl.obolibrary.org/obo/VariO_0001</a></span><br>
 							)
 						</td>
 </tr>

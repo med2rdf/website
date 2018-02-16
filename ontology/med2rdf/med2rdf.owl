@@ -1,35 +1,102 @@
-@prefix : <http://med2rdf.org/ontology/med2rdf#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://med2rdf.org/ontology/med2rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<http://med2rdf.org/ontology/med2rdf>
+<http://med2rdf.org/ontology/med2rdf#>
     dcterms:created "2018-01-31^^xsd:date" ;
     dcterms:creator "Shuichi Kawashima" ;
     dcterms:description "Controlled vocabulalies for inteded for use in the MED2RDF project"@en ;
     a owl:Ontology ;
-    owl:versionIRI <http://med2rdf.org/ontology/med2rdf#2018-01-31> .
+    owl:imports <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2004/02/skos/core> ;
+    owl:versionInfo 0.05 .
+
+:Disease
+    a owl:Class ;
+    rdfs:label "Disease"@en .
+
+:Evidence
+    a owl:Class ;
+    rdfs:label "Evidence"@en .
+
+:Gene
+    a owl:Class ;
+    rdfs:label "Gene"@en .
+
+:Variation
+    a owl:Class ;
+    rdfs:label "Variation"@en .
 
 :alternative_allele
     a owl:DatatypeProperty ;
     rdfs:domain [
         a owl:Class ;
-        owl:unionOf (<http://purl.obolibrary.org/obo/SO_0001060>
+        owl:unionOf (:Variation
+            <http://purl.obolibrary.org/obo/SO_0001060>
             <http://purl.obolibrary.org/obo/VariO_0001>
         )
     ] ;
     rdfs:range xsd:string .
 
+:caused_by
+    a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:label "caused_by"@en ;
+    rdfs:range :Variation .
+
+:disease
+    a owl:ObjectProperty ;
+    rdfs:domain :Variation ;
+    rdfs:label "disease"@en ;
+    rdfs:range :Disease .
+
+:evidence
+    a owl:ObjectProperty ;
+    rdfs:domain rdf:Statement ;
+    rdfs:label "evidence"@en ;
+    rdfs:range :Evidence .
+
+:gene
+    a owl:ObjectProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (:Variation
+            <http://purl.obolibrary.org/obo/SO_0001060>
+            <http://purl.obolibrary.org/obo/VariO_0001>
+        )
+    ] ;
+    rdfs:label "gene"@en ;
+    rdfs:range :Gene .
+
 :reference_allele
     a owl:DatatypeProperty ;
     rdfs:domain [
         a owl:Class ;
-        owl:unionOf (<http://purl.obolibrary.org/obo/SO_0001060>
+        owl:unionOf (:Variation
+            <http://purl.obolibrary.org/obo/SO_0001060>
             <http://purl.obolibrary.org/obo/VariO_0001>
         )
     ] ;
     rdfs:range xsd:string .
+
+:variation
+    a owl:ObjectProperty ;
+    rdfs:domain :Gene ;
+    rdfs:label "variation"@en ;
+    rdfs:range [
+        a owl:Class ;
+        owl:unionOf (:Variation
+            <http://purl.obolibrary.org/obo/SO_0001060>
+            <http://purl.obolibrary.org/obo/VariO_0001>
+        )
+    ] .
+
+<http://purl.obolibrary.org/obo/SO_0001060>
+    a owl:Class .
+
+<http://purl.obolibrary.org/obo/VariO_0001>
+    a owl:Class .
 
