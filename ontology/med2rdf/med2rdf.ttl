@@ -1,0 +1,35 @@
+@prefix : <http://med2rdf.org/ontology/med2rdf#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://med2rdf.org/ontology/med2rdf>
+    dcterms:created "2018-01-31^^xsd:date" ;
+    dcterms:creator "Shuichi Kawashima" ;
+    dcterms:description "Controlled vocabulalies for inteded for use in the MED2RDF project"@en ;
+    a owl:Ontology ;
+    owl:versionIRI <http://med2rdf.org/ontology/med2rdf#2018-01-31> .
+
+:alternative_allele
+    a owl:DatatypeProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (<http://purl.obolibrary.org/obo/SO_0001060>
+            <http://purl.obolibrary.org/obo/VariO_0001>
+        )
+    ] ;
+    rdfs:range xsd:string .
+
+:reference_allele
+    a owl:DatatypeProperty ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf (<http://purl.obolibrary.org/obo/SO_0001060>
+            <http://purl.obolibrary.org/obo/VariO_0001>
+        )
+    ] ;
+    rdfs:range xsd:string .
+
