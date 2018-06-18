@@ -24,7 +24,7 @@ Currently we are working on the following databases:
 * ClinVar
 * DGIdb
 * COSMIC
-* CiVic
+* CIViC
 * HiNT
 * INstruct
 * HGNC
