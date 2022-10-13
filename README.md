@@ -33,9 +33,11 @@ etc.
 
 ### RDF data models
 
-* Ontologies for above biomedical databases
+* Ontologies for above biomedical databases ([Med2RDF ontology](https://github.com/med2rdf/med2rdf-ontology))
   * Ontology commonly used among databases
   * Ontology specific to each database
-* Human chromosome ontology
-* Standardization of variation representation
+* Human chromosome ontology ([HCO](https://github.com/med2rdf/hco))
+* Standardization of variation representation ([VISC](https://github.com/dbcls/visc))
+  * Genome Variation Ontology ([GVO](http://genome-variation.org/resource/gvo))
 
+![](https://github.com/med2rdf/med2rdf-ontology/blob/master/med2rdf-model_20190718.png)
