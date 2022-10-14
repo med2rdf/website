@@ -40,4 +40,4 @@ etc.
 * Standardization of variation representation ([VISC](https://github.com/dbcls/visc))
   * Genome Variation Ontology ([GVO](http://genome-variation.org/resource/gvo))
 
-![](https://github.com/med2rdf/med2rdf-ontology/blob/master/med2rdf-model_20190718.png)
+![](https://raw.githubusercontent.com/med2rdf/med2rdf-ontology/master/med2rdf-model_20190718.png)
